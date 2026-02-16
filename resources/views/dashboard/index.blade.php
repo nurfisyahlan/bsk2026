@@ -18,7 +18,7 @@
     <div class="carousel-inner rounded shadow">
 
         <div class="carousel-item active">
-            <img src="{{ asset('images/carousel/bsk1.jpg') }}" class="d-block w-100" style="height:350px; object-fit:cover;">
+            <img src="{{ asset('assets/mukhlishin.png') }}" class="d-block w-100" style="height:350px; object-fit:cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h5>Badan Sosial Kematian</h5>
                 <p>Manajemen data sosial masjid secara digital</p>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="carousel-item">
-            <img src="{{ asset('images/carousel/bsk2.jpg') }}" class="d-block w-100" style="height:350px; object-fit:cover;">
+            <img src="{{ asset('assets/logo2.png') }}" class="d-block w-100" style="height:350px; object-fit:cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h5>Transparansi Kas</h5>
                 <p>Pencatatan saldo dan iuran lebih rapi & aman</p>
