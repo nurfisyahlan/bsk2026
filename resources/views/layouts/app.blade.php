@@ -18,11 +18,11 @@
 <body>
 
     {{-- NAVBAR --}}
-    <div class="navbar">
+    <div class="navbar navbar-main">
         <div class="navbar-container">
             <div class="navbar-left">
                 <img src="{{ asset('assets/logobsk.png') }}" class="logo-bsk">
-                <h2>BSK Masjid Mukhlishin</h2>
+                <h2 class="navbar-title">BSK Masjid Mukhlishin</h2>
             </div>
 
             <div class="nav-menu">
@@ -33,7 +33,7 @@
                 <a href="{{ route('pengumuman.index') }}">Pengumuman</a>
 
                 <div class="dropdown">
-                    <a href="#" class="dropdown-toggle">Lainnya </a>
+                    <a href="#" class="dropdown-toggle">Lainnya</a>
                     <div class="dropdown-menu">
                         <a href="">Laporan</a>
                         <a href="">Data Kematian</a>
@@ -44,6 +44,7 @@
             </div>
         </div>
     </div>
+
 
 
     {{-- CONTENT --}}

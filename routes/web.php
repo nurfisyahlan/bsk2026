@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KeluargaController;
 use App\Http\Controllers\TanggunganController;
 use App\Http\Controllers\SaldoController;
@@ -14,7 +15,8 @@ use App\Http\Controllers\PengumumanController;
 |--------------------------------------------------------------------------
 */
 
-Route::view('/', 'dashboard.index')->name('dashboard');
+Route::get('/', [DashboardController::class, 'index'])
+    ->name('dashboard');
 
 /*
 |--------------------------------------------------------------------------
