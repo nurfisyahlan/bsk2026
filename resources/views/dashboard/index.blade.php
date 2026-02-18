@@ -114,6 +114,43 @@
 
 </div>
 
+
+{{-- ===== TENTANG BSK ===== --}}
+    <div class="container about-section mt-5 mb-5">
+
+        <h2 class="text-center mb-4">Tentang Badan Sosial Kematian</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+
+                <div class="about-card shadow-sm">
+                    <p>
+                        <strong>Badan Sosial Kematian (BSK)</strong> Masjid Mukhlishin adalah lembaga sosial
+                        yang bertugas mengelola iuran, kas, inventaris, serta pelayanan sosial
+                        bagi warga anggota BSK, khususnya dalam urusan kematian dan takziah.
+                    </p>
+
+                    <p>
+                        Sistem ini dibuat untuk membantu pengurus dalam melakukan
+                        pencatatan data secara <strong>digital, transparan, dan tertib</strong>,
+                        sehingga pelayanan kepada masyarakat dapat berjalan lebih cepat dan akurat.
+                    </p>
+
+                    <div class="about-highlight">
+                        <div>📌 Transparansi Data</div>
+                        <div>📌 Pelayanan Cepat</div>
+                        <div>📌 Administrasi Rapi</div>
+                        <div>📌 Berbasis Masjid</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
 {{-- ===== FOOTER ===== --}}
 <footer class="mt-5 pt-4 pb-3 bg-light border-top">
     <div class="container">
