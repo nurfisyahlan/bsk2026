@@ -26,7 +26,7 @@
             </div>
 
             <div class="nav-menu">
-                <a href="{{ route('keluarga.index') }}">Keluarga</a>
+                <a href="{{ route('dashboard.keluarga') }}">Keluarga</a>
                 <a href="{{ route('iuran.index') }}">Kutipan</a>
                 <a href="{{ route('saldo.index') }}">Saldo</a>
                 <a href="{{ route('inventaris.index') }}">Inventaris</a>
@@ -35,7 +35,11 @@
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle">Lainnya</a>
                     <div class="dropdown-menu">
-                        <a href="">Laporan</a>
+                        <a href="{{ route('keluarga.index') }}">Keluarga</a>
+                        <a href="{{ route('iuran.index') }}">Kutipan</a>
+                        <a href="{{ route('saldo.index') }}">Saldo</a>
+                        <a href="{{ route('inventaris.index') }}">Inventaris</a>
+                        <a href="{{ route('pengumuman.index') }}">Pengumuman</a>
                         <a href="">Data Kematian</a>
                         <a href="">Santunan</a>
                         <a href="">Pengaturan</a>

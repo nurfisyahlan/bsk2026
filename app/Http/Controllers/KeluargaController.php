@@ -15,10 +15,20 @@ class KeluargaController extends Controller
      */
     public function index()
     {
+        $keluargas = Keluarga::orderBy('created_at', 'desc')->get();
+        return view('dashboard.keluarga', compact('keluargas'));
+    }
+
+    /**
+     * CRUD DATA (ADMIN)
+     * keluarga/index.blade.php
+     */
+    public function manage()
+    {
         $keluarga = Keluarga::all();
         return view('keluarga.index', compact('keluarga'));
     }
-
+    
     /**
      * Show the form for creating a new resource.
      */

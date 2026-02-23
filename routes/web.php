@@ -87,3 +87,6 @@ Route::resource('inventaris', InventarisController::class);
 // PENGUMUMAN
 Route::resource('pengumuman', PengumumanController::class)
     ->except(['create', 'edit', 'show']); 
+
+Route::get('/dashboard/keluarga', [KeluargaController::class, 'index'])
+    ->name('dashboard.keluarga');
