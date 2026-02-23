@@ -90,3 +90,7 @@ Route::resource('pengumuman', PengumumanController::class)
 
 Route::get('/dashboard/keluarga', [KeluargaController::class, 'index'])
     ->name('dashboard.keluarga');
+
+/* USER */
+Route::get('/dashboard/iuran', [IuranController::class, 'dashboard'])
+    ->name('dashboard.iuran');

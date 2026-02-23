@@ -27,7 +27,7 @@
 
             <div class="nav-menu">
                 <a href="{{ route('dashboard.keluarga') }}">Keluarga</a>
-                <a href="{{ route('iuran.index') }}">Kutipan</a>
+                <a href="{{ route('dashboard.iuran') }}">Kutipan</a>
                 <a href="{{ route('saldo.index') }}">Saldo</a>
                 <a href="{{ route('inventaris.index') }}">Inventaris</a>
                 <a href="{{ route('pengumuman.index') }}">Pengumuman</a>

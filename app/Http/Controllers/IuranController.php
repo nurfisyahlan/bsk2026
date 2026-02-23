@@ -12,50 +12,40 @@ class IuranController extends Controller
 {
     /**
      * Tampilkan daftar iuran
-     */
+     */   
     public function index(Request $request)
     {
-        // default tahun = tahun sekarang
         $tahunDipilih = $request->tahun ?? date('Y');
         $status = $request->status;
         $rtRw = $request->rt_rw;
 
-        // query utama iuran
         $query = Iuran::with(['keluarga', 'detail'])
             ->where('tahun', $tahunDipilih);
 
-        // filter status (sudah_lunas / belum_lunas)
         if ($status) {
             $query->where('status', $status);
         }
 
-        // filter RT/RW (relasi ke tabel keluarga)
         if ($rtRw) {
             $query->whereHas('keluarga', function ($q) use ($rtRw) {
                 $q->where('rt_rw', $rtRw);
             });
         }
 
-        $iuran = $query
-            ->orderBy('tahun', 'desc')
-            ->get();
+        $iuran = $query->orderBy('tahun', 'desc')->get();
 
-        // list tahun untuk dropdown
         $listTahun = Iuran::select('tahun')
             ->distinct()
             ->orderBy('tahun', 'desc')
             ->pluck('tahun');
 
-        // list keluarga (untuk modal create)
         $keluarga = Keluarga::orderBy('nama_kk')->get();
 
-        // list RT/RW untuk filter
         $listRtRw = Keluarga::select('rt_rw')
             ->distinct()
             ->orderBy('rt_rw')
             ->pluck('rt_rw');
 
-        // 👉 VIEW TETAP SAMA
         return view('iuran.index', compact(
             'iuran',
             'keluarga',
@@ -65,6 +55,44 @@ class IuranController extends Controller
         ));
     }
 
+    /**
+     * ==========================
+     * USER (READ ONLY)
+     * ==========================
+     */
+    public function dashboard(Request $request)
+    {
+        $tahunDipilih = $request->tahun ?? date('Y');
+        $rtRw = $request->rt_rw;
+
+        $query = Iuran::with('keluarga')
+            ->where('tahun', $tahunDipilih);
+
+        if ($rtRw) {
+            $query->whereHas('keluarga', function ($q) use ($rtRw) {
+                $q->where('rt_rw', $rtRw);
+            });
+        }
+
+        $iuran = $query->orderBy('tahun', 'desc')->get();
+
+        $listTahun = Iuran::select('tahun')
+            ->distinct()
+            ->orderBy('tahun', 'desc')
+            ->pluck('tahun');
+
+        $listRtRw = Keluarga::select('rt_rw')
+            ->distinct()
+            ->orderBy('rt_rw')
+            ->pluck('rt_rw');
+
+        return view('dashboard.kutipan', compact(
+            'iuran',
+            'listTahun',
+            'tahunDipilih',
+            'listRtRw'
+        ));
+    }
     /**
      * Form catat iuran
      */
