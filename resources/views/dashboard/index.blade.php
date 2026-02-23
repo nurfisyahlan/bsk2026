@@ -152,12 +152,12 @@
 
 
 {{-- ===== FOOTER ===== --}}
-<footer class="mt-5 pt-4 pb-3 bg-light border-top">
+<footer class="mt-5 pt-4 pb-3 px-3 bg-light border-top">
     <div class="container">
         <div class="row">
 
             {{-- Alamat --}}
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 border-end">
                 <h5>Badan Sosial Kematian</h5>
                 <p class="mb-1">
                     Masjid Mukhlishin<br>
@@ -167,7 +167,7 @@
             </div>
 
             {{-- Sosial Media --}}
-            <div class="col-md-6 mb-3 text-md-end">
+            <div class="col-md-6 mb-3 text-md-end pe-md-3">
                 <h5>Sosial Media</h5>
                 <a href="#" class="text-decoration-none me-3">
                     🌐 Website
