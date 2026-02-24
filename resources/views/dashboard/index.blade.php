@@ -118,37 +118,66 @@
 {{-- ===== TENTANG BSK ===== --}}
     <div class="container about-section mt-5 mb-5">
 
-        <h2 class="text-center mb-4">Tentang Badan Sosial Kematian</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-11">
 
-        <div class="row justify-content-center">
-            <div class="col-md-10">
+            <div class="about-wrapper shadow-sm">
 
-                <div class="about-card shadow-sm">
-                    <p>
-                        <strong>Badan Sosial Kematian (BSK)</strong> Masjid Mukhlishin adalah lembaga sosial
-                        yang bertugas mengelola iuran, kas, inventaris, serta pelayanan sosial
-                        bagi warga anggota BSK, khususnya dalam urusan kematian dan takziah.
-                    </p>
+                <!-- ===== KIRI : TENTANG (ASLI, TIDAK DIUBAH) ===== -->
+                <div class="about-left">
+                    <h2 class="text-center mb-4">Tentang Badan Sosial Kematian</h2>
 
-                    <p>
-                        Sistem ini dibuat untuk membantu pengurus dalam melakukan
-                        pencatatan data secara <strong>digital, transparan, dan tertib</strong>,
-                        sehingga pelayanan kepada masyarakat dapat berjalan lebih cepat dan akurat.
-                    </p>
+                    <div class="about-card">
+                        <p>
+                            <strong>Badan Sosial Kematian (BSK)</strong> Masjid Mukhlishin adalah lembaga sosial
+                            yang bertugas mengelola iuran, kas, inventaris, serta pelayanan sosial
+                            bagi warga anggota BSK, khususnya dalam urusan kematian dan takziah.
+                        </p>
 
-                    <div class="about-highlight">
-                        <div>📌 Transparansi Data</div>
-                        <div>📌 Pelayanan Cepat</div>
-                        <div>📌 Administrasi Rapi</div>
-                        <div>📌 Berbasis Masjid</div>
+                        <p>
+                            Sistem ini dibuat untuk membantu pengurus dalam melakukan
+                            pencatatan data secara <strong>digital, transparan, dan tertib</strong>,
+                            sehingga pelayanan kepada masyarakat dapat berjalan lebih cepat dan akurat.
+                        </p>
+
+                        <div class="about-highlight">
+                            <div>📌 Transparansi Data</div>
+                            <div>📌 Pelayanan Cepat</div>
+                            <div>📌 Administrasi Rapi</div>
+                            <div>📌 Berbasis Masjid</div>
+                        </div>
                     </div>
+                </div>
 
+                <!-- GARIS PEMISAH -->
+                <div class="about-divider"></div>
+
+                <!-- ===== KANAN : PENGUMUMAN ===== -->
+                <div class="about-right">
+                    <h2 class="text-center mb-4">Pengumuman</h2>
+
+                    <div class="pengumuman-card">
+                        <button class="nav-btn">&lsaquo;</button>
+
+                        <div class="pengumuman-content">
+                            <div class="pengumuman-thumb"></div>
+                            <h5 class="mt-3">Judul Pengumuman</h5>
+                            <p>
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                        </div>
+
+                        <button class="nav-btn">&rsaquo;</button>
+                    </div>
                 </div>
 
             </div>
-        </div>
 
+        </div>
     </div>
+
+</div>
 
 
 {{-- ===== FOOTER ===== --}}

@@ -282,3 +282,77 @@ th {
     font-weight: 500;
     text-align: center;
 }
+
+.about-wrapper {
+    display: flex;
+    gap: 32px;
+    padding: 28px;
+    border-radius: 12px;
+    border: 2px solid #ff6a00;
+    background: #fff;
+}
+
+.about-left,
+.about-right {
+    flex: 1;
+}
+
+.about-divider {
+    width: 1px;
+    background-color: #ddd;
+}
+
+.about-card p {
+    line-height: 1.7;
+    color: #444;
+}
+
+.about-highlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.pengumuman-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #555;
+}
+
+.pengumuman-content {
+    text-align: center;
+}
+
+.pengumuman-thumb {
+    width: 100%;
+    height: 120px;
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.pengumuman-content p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-divider {
+        width: 100%;
+        height: 1px;
+    }
+}
