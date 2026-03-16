@@ -118,11 +118,8 @@
     <div class="container about-section">
 
         <div class="row justify-content-center">
-            <div class="col-md-11">
-
-                <div class="about-wrapper shadow-sm">
-
-                    <!-- ===== KIRI : TENTANG (ASLI, TIDAK DIUBAH) ===== -->
+            <div class="col-md-11 about-wrapper shadow-sm">
+                <!-- ===== KIRI : TENTANG (ASLI, TIDAK DIUBAH) ===== -->
                     <div class="about-left">
                         <h2 class="text-center mb-4">Tentang Badan Sosial Kematian</h2>
 

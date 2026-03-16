@@ -2,7 +2,7 @@
 .navbar {
     background-color: #d69999;
     color: white;
-    padding: 22px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -60,9 +60,8 @@
 }
 
 .nav-menu a {
-    margin-left: 20px;
     color: #e5e7eb;
-    font-weight: bold;
+    font-weight: bold;       
     text-decoration: none;
 }
 
@@ -101,6 +100,7 @@
 
 .dropdown-menu a:hover {
     background: #f1f5f9;
+    border-radius: 8px;
 }
 
 .dropdown.active .dropdown-menu {

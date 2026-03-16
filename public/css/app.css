@@ -133,7 +133,7 @@ th {
 /* ===== ABOUT SECTION ===== */
 .about-section {
     background-color: #ffffff;   
-    border: 2px solid #ff6a00;
+    border: 2px solid #d69999;
     border-radius: 12px;
 }
 
@@ -193,12 +193,6 @@ th {
     font-weight: 500;
 }
 
-.pengumuman-card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 .nav-btn {
     background: none;
     border: none;
@@ -207,13 +201,19 @@ th {
     color: #555;
 }
 
+.pengumuman-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .pengumuman-content {
     text-align: center;
 }
 
 .pengumuman-thumb {
     width: 100%;
-    height: 120px;
+    height: 180px;
     background: #e0e0e0;
     border-radius: 10px;
 }
