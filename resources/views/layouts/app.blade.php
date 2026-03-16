@@ -11,8 +11,9 @@
     <!-- Logo Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- CSS app.blade.php -->
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 
 </head>
 <body>
@@ -35,6 +36,7 @@
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle">Lainnya</a>
                     <div class="dropdown-menu">
+                        <a href="">Admin</a>
                         <a href="{{ route('keluarga.index') }}">Keluarga</a>
                         <a href="{{ route('iuran.index') }}">Kutipan</a>
                         <a href="{{ route('saldo.index') }}">Saldo</a>

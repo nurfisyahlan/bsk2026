@@ -1,0 +1,108 @@
+/* NAVBAR */
+.navbar {
+    background-color: #d69999;
+    color: white;
+    padding: 22px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+/* Container */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+    transition: all 0.3s ease;
+}
+
+/* Left */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Title */
+.navbar-left h2 {
+    font-size: 20px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+/* ===== MODE MINIMAL SAAT SCROLL ===== */
+.navbar.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.navbar.scrolled .navbar-container {
+    gap: 120px;
+}
+
+.navbar.scrolled .logo-bsk {
+    height: 32px;
+}
+
+.navbar.scrolled .navbar-left h2 {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    color: #e5e7eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    z-index: 999;
+}
+
+.dropdown-menu a {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #111;
+    box-sizing: border-box;
+}
+
+.dropdown-menu a:hover {
+    background: #f1f5f9;
+}
+
+.dropdown.active .dropdown-menu {
+    display: flex;
+}
