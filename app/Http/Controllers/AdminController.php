@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Keluarga;
+use App\Models\Saldo;
+use App\Models\Inventaris;
 
 class AdminController extends Controller
 {
@@ -20,19 +23,25 @@ class AdminController extends Controller
 
             session(['admin_login' => true]);
 
-            return redirect()->route('admin.dashboard');
+            return redirect()->route('admin.index');
         }
 
         return back()->with('error', 'Username atau password salah');
     }
 
-    public function dashboard()
+    public function index()
     {
-        if (!session('admin_login')) {
-            return redirect()->route('admin.login');
-        }
+        $totalKeluarga   = Keluarga::count();
+        $totalJiwa       = Keluarga::sum('jiwa');
+        $totalSaldo      = Saldo::sum('jumlah');
+        $totalInventaris = Inventaris::count();
 
-        return view('admin.dashboard');
+        return view('dashboard.index', compact(
+            'totalKeluarga',
+            'totalJiwa',
+            'totalSaldo',
+            'totalInventaris'
+        ));
     }
 
     public function logout()

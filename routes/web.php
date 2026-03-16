@@ -99,6 +99,6 @@ Route::get('/dashboard/iuran', [IuranController::class, 'dashboard'])
 Route::get('/admin/login', [AdminController::class, 'loginForm'])->name('admin.login');
 Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login.process');
 
-Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+Route::get('/admin/', [AdminController::class, 'index'])->name('admin.index');
 Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
 

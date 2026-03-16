@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+@extends('layouts.adminapp')
+
+@section('title', 'Dashboard - Admin')
+
+@section('content')
+
+    @include('components.stats-bar')
+
+@endsection
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Dashboard Admin</title>
@@ -56,4 +65,4 @@
 </div>
 
 </body>
-</html>
+</html> -->
