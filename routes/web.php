@@ -8,6 +8,7 @@ use App\Http\Controllers\SaldoController;
 use App\Http\Controllers\IuranController;
 use App\Http\Controllers\InventarisController;
 use App\Http\Controllers\PengumumanController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -94,3 +95,10 @@ Route::get('/dashboard/keluarga', [KeluargaController::class, 'index'])
 /* USER */
 Route::get('/dashboard/iuran', [IuranController::class, 'dashboard'])
     ->name('dashboard.iuran');
+
+Route::get('/admin/login', [AdminController::class, 'loginForm'])->name('admin.login');
+Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login.process');
+
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+Route::get('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
+

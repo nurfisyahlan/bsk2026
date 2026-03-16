@@ -140,7 +140,7 @@ th {
 .about-wrapper {
     display: flex;
     gap: 32px;
-    padding: 28px;
+    padding: 28px;    
     background: #fff;
 }
 
